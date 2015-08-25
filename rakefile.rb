@@ -12,11 +12,6 @@ task :test => :set_env do
 	end
 end
 
-task :current_test do
-	clear_db
-	rake_sh "ruby tests/integration/test_add_l2_circuit_as_a_service.rb"
-end
-
 task :run => :set_env do
 	clear_db
 	sh 'rackup -s puma'
@@ -29,6 +24,7 @@ def clear_db
 end
 
 task :set_env do
+	ENV['ENVIRONMENT_URI'] = "localhost:3000"
 	ENV['VIEW_STORE_CONNECTION_STRING'] = 'mongodb://localhost/view-store'
 	ENV['DATA_STORE_CONNECTION_STRING'] = 'mongodb://localhost/data-store'
 end

@@ -19,8 +19,11 @@ GEM
     bson (1.12.3)
     bson_ext (1.12.3)
       bson (~> 1.12.3)
+    childprocess (0.5.6)
+      ffi (~> 1.0, >= 1.0.11)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
+    ffi (1.9.10)
     git_repository (0.0.11)
     hashie (3.4.2)
     httparty (0.13.5)
@@ -59,7 +62,13 @@ GEM
       rack (>= 1.0)
     rake (10.4.2)
     ref (2.0.0)
+    rubyzip (1.1.7)
     sass (3.4.17)
+    selenium-webdriver (2.47.1)
+      childprocess (~> 0.5)
+      multi_json (~> 1.0)
+      rubyzip (~> 1.0)
+      websocket (~> 1.0)
     sinatra-assetpack (0.3.1)
       jsmin
       rack-test
@@ -74,6 +83,9 @@ GEM
     tilt (2.0.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    watir-webdriver (0.8.0)
+      selenium-webdriver (>= 2.46.2)
+    websocket (1.2.2)
 
 PLATFORMS
   ruby
@@ -93,3 +105,4 @@ DEPENDENCIES
   sinatra-assetpack
   test-unit
   therubyracer
+  watir-webdriver

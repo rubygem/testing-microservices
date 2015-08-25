@@ -12,6 +12,7 @@ gem 'sinatra-assetpack'
 gem 'omniauth-authic'
 gem 'activesupport'
 gem 'rack-ssl-enforcer'
+gem 'watir-webdriver'
 
 group :development do
 	gem 'git_repository'
