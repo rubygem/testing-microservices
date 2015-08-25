@@ -1,0 +1,81 @@
+.main-content{
+	padding-left: 120px;
+	padding-top: 50px;
+	width:90%;
+}
+
+.logo.image {
+	width: 50px;
+	padding-left: 1.5em;
+	margin-top: -0.5em;
+	padding-bottom: 0.5em;
+}
+
+.up{
+	background: #eeffe7 !important;
+  	color: #3c763d !important;
+}
+
+.down{
+	background: #fff0f0 !important;
+  	color: #cd2929 !important;
+}
+
+.sidebar{
+	overflow: hidden;
+}
+
+img.clockwise.rotated {
+    transform: rotate(90deg);
+}
+
+.clickable{
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.selected{
+	color: #e6022b;
+}
+
+.clickable:hover {
+  color: #e6022b;
+}
+
+i.monstrous.icon {
+    font-size: 7em;
+}
+
+.user.info{
+	padding-right: 1em;
+}
+
+html, body {
+    height: auto;
+}
+
+.ui.segment[class*="bottom attached"] {
+    margin-bottom: 0;
+ }
+
+ .msa.nag{
+ 	background-color: #fffbe6;
+ }
+
+.msa.nag > .title{
+  	color: #876a38;
+ }
+
+.msa.nag:hover {
+  background: #efe6ff;
+  opacity: 1;
+}
+
+.msa.nag .close:hover {
+  opacity: 1;
+}
+
+.ui.nag > .close.icon {
+    color: #876a38;
+}
+
